@@ -1,3 +1,37 @@
-.menuItem {
-    margin: 0 5px;
+.mainContainer{
+    background-color: var(--primary);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+.menuContainer{
+    display:flex;
+    align-items: center;
+    justify-items:center;
+    gap:60px;
+    
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap:47px;
+}
+
+
+a {
+    text-decoration: none;
+    color:var(--whiteGradient)
+  }
+  a:hover {
+    color: var(--white);
+
+    
+  }
+.logoText {
+    color: var(--white);
+    font-size:35px;
+    font-weight:bold;
+
 }
