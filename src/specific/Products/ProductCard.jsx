@@ -1,4 +1,5 @@
 import React from 'react'
+import "./ProductCard.module.css"
 
 function ProductCard() {
   return (
