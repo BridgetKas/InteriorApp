@@ -1,37 +1,56 @@
-.mainContainer{
+.mainContainer {
     background-color: var(--primary);
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
+    padding: 2rem 5%;
 }
-.menuContainer{
-    display:flex;
+.menuContainer {
+    display:none;
     align-items: center;
-    justify-items:center;
-    gap:60px;
-    
+    justify-content:flex-end;
+    flex-grow:1;    
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
-    gap:47px;
+}
+.menuItem {
+    margin: 0 0.6rem;
 }
 
+.cartContainer {
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+    margin-left:1.5rem;
+}
 
 a {
     text-decoration: none;
     color:var(--whiteGradient)
   }
-  a:hover {
-    color: var(--white);
+a:hover {
+    color: var(--white);  
+}
 
-    
-  }
 .logoText {
     color: var(--white);
     font-size:35px;
     font-weight:bold;
+}
+
+@media(min-width:768px) {
+    .menuContainer {
+        display:flex;
+    }
+
+}
+
+@media(min-width:992px) {
+    .menuItem {
+        margin: 0 1.5rem;
+    }
 
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import sytles from "./NavBar.module.css"
+import styles from "./NavBar.module.css"
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { MdPersonOutline } from "react-icons/md";
 import { colors } from '../../../utils/colors';
@@ -16,13 +16,13 @@ const menu = [
 
 function NavBar() {
   return (
-    <div className={sytles.mainContainer}>
-        <div className={sytles.logoText}>Dream</div>
-        <div className={sytles.menuContainer}>
-          <div className={sytles.menu}>
-            {menu.map(item => <NavLink to={item.path} key={item.path} className="menuItem">{item.label}</NavLink>)}
+    <div className={styles.mainContainer}>
+        <div className={styles.logoText}>Dream</div>
+        <div className={styles.menuContainer}>
+          <div className={styles.menu}>
+            {menu.map(item => <NavLink to={item.path} key={item.path} className={styles.menuItem}>{item.label}</NavLink>)}
           </div>
-          <div className={sytles.menu}>
+          <div className={styles.cartContainer}>
             <MdPersonOutline size={30} color={colors.whiteGradient}/>
             <NavLink to="/cart"><PiShoppingCartSimple size={30}/></NavLink>
           </div>
