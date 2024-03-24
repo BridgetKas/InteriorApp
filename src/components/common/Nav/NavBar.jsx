@@ -1,9 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import styles from "./NavBar.module.css"
-import { PiShoppingCartSimple } from "react-icons/pi";
-import { MdPersonOutline } from "react-icons/md";
-import { colors } from '../../../utils/colors';
+import React, { Fragment } from 'react'
+import DesktopNav from './DesktopNav/DesktopNav';
 
 const menu = [
     { path: '/', label: "Home" },
@@ -16,18 +12,10 @@ const menu = [
 
 function NavBar() {
   return (
-    <div className={styles.mainContainer}>
-        <div className={styles.logoText}>Dream</div>
-        <div className={styles.menuContainer}>
-          <div className={styles.menu}>
-            {menu.map(item => <NavLink to={item.path} key={item.path} className={styles.menuItem}>{item.label}</NavLink>)}
-          </div>
-          <div className={styles.cartContainer}>
-            <MdPersonOutline size={30} color={colors.whiteGradient}/>
-            <NavLink to="/cart"><PiShoppingCartSimple size={30}/></NavLink>
-          </div>
-        </div>
-    </div>
+    <Fragment>
+      <DesktopNav menu={menu}/>
+    </Fragment>   
+    
   )
 }
 
