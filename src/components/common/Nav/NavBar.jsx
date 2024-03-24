@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
-import DesktopNav from './DesktopNav/DesktopNav';
+import DesktopNav from './DesktopNav';
+import MobileNav from './MobileNav';
+import styles from "./NavBar.module.css"
 
 const menu = [
     { path: '/', label: "Home" },
@@ -12,9 +14,12 @@ const menu = [
 
 function NavBar() {
   return (
-    <Fragment>
-      <DesktopNav menu={menu}/>
-    </Fragment>   
+    
+      <div className={styles.mainContainer}>
+        <div className={styles.logoText}>Dream</div>
+        <DesktopNav menu={menu}/>
+        <MobileNav />
+      </div>
     
   )
 }

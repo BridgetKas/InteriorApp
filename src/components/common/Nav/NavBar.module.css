@@ -12,6 +12,7 @@
     flex-grow:1;    
 }
 
+
 .menu {
     display: flex;
     align-items: center;
@@ -41,9 +42,18 @@ a:hover {
     font-weight:bold;
 }
 
+/* ******** CSS MOBILE NAV BAR */
+
+.mobileContainer{
+    display:block;
+}
+
 @media(min-width:768px) {
     .menuContainer {
         display:flex;
+    }
+    .mobileContainer{
+        display:none;
     }
 
 }
@@ -54,3 +64,5 @@ a:hover {
     }
 
 }
+
+/*  */
