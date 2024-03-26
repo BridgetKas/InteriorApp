@@ -17,8 +17,11 @@ function NavBar() {
     
       <div className={styles.mainContainer}>
         <div className={styles.logoText}>Dream</div>
-        <DesktopNav menu={menu}/>
-        <MobileNav />
+        <div className={styles.container}>
+          <DesktopNav menu={menu}/>
+          <MobileNav menu={menu}/>
+        </div>
+
       </div>
     
   )
