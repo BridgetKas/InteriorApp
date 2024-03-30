@@ -1,0 +1,149 @@
+.footertabContainer {
+    padding:0.5rem 5%;
+}
+
+.footerContainer {
+    display:flex;
+    justify-content: space-between;
+    row-gap:10px;
+    flex-wrap:wrap;
+}
+
+.bottomContainer {
+      width:100%;
+}
+
+h1 {
+    color: var(--primary);
+    font-size:35px;
+    font-weight:bold;
+}
+
+.description {
+    color: var(--darkGray);
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.socialMediaContainer {
+    display:flex;
+    margin-bottom:20px;
+    gap:10px;
+}
+
+.logoContainer{
+    padding:10px;
+    border-radius:50%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color:var(--secondary);   
+}
+
+.logo {
+    color:var(--primary);
+}
+
+.logoContainer:hover {
+    background-color:var(--primary)
+}
+
+.logoContainer:hover .logo {
+    cursor:pointer;
+    color:var(--white);
+}
+
+.companyContainer {
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    width:100%;
+    justify-content:space-between;  
+}
+
+.linksContainer {
+    width:100%;
+}
+
+.companyContainer a {
+   text-decoration:none;
+   color:var(--darkGray);
+   display:block;
+   margin-bottom:15px;
+}
+
+.companyContainer a:hover {
+    cursor:pointer;
+    color:var(--darkGray);
+}
+
+.copyrightContainer {
+    display:flex;
+    justify-content:space-between;
+    color:var(--darkGray);
+    flex-wrap:wrap;
+}
+
+.copy {
+    width:100%;
+    text-align:center;
+}
+
+.horizontalLine {
+    height:3px;
+    width:15px;
+    display:inline-block;
+    background-color:var(--black);
+    margin-bottom:4px;    
+}
+
+.privacyContainer {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    width:100%;
+}
+
+@media (min-width:768px) {
+
+    .linksContainer {
+        width:50%;
+    }
+
+    .companyContainer {
+        gap:0;
+    }
+       
+}
+
+@media (min-width:992px) {
+    
+    .bottomContainer {
+        width:30%;
+
+    }
+
+    .companyContainer {
+        width:65%;
+      
+    }
+
+    .privacyContainer {
+        width:50%;
+        justify-content: flex-end;
+    }
+
+    .copy {
+        width:50%;
+        text-align:left; 
+        
+    }
+
+    .linksContainer {
+        width:25%;
+    }
+
+}
+
+

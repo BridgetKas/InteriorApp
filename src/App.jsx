@@ -7,6 +7,7 @@ import Service  from './pages/Services/ServicePage'
 import Blog  from './pages/Blog/BlogPage'
 import Contact  from './pages/Contact/ContactPage'
 import Cart  from './pages/Cart/CartPage'
+import FooterTab from "./layout/Footer/FooterTab"
 
 
 const router = createBrowserRouter([
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
       {
         path:"cart",
         element:<Cart/>
-      }
+      },
       
     ],
   },
