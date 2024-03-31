@@ -1,9 +1,10 @@
 import React from 'react'
-import "./Button.module.css"
+import styles from "./Button.module.css"
 
-function Button() {
+function Button(props) {
+  const {title,textColor,bgColor,borderColor} = props
   return (
-    <div>Button</div>
+    <button>{title}</button>
   )
 }
 
