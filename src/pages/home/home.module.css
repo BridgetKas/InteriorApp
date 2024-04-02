@@ -16,7 +16,7 @@
     color:var(--whiteGradient);
 }
 
-.shopButton {
+/* .shopButton {
     color:var(--black);
     background-color:var(--yellow);
     font-size:15px;
@@ -29,6 +29,11 @@
     border:2px solid var(--whiteGradient);
     padding:13px 25px;
 
+} */
+
+.buttonContainer {
+    display:flex;
+    gap:15px;
 }
 
 .heroImageContainer {
@@ -61,7 +66,8 @@
 }
 
 .qualityDescription {
-    color:var(--whiteGradient);
+    color:var(--darkGray);
+    margin-top:-10px;
 }
 
 .chairButton {
@@ -105,19 +111,38 @@
 .featuresContainer {
     display: flex;
     flex-wrap:wrap;
-    row-gap:10px;
 }
 
 .featureContainer {
-    width:50%;
+    width:40%;
+    padding:12px;
+}
+
+.featureTitle {
+    color:var(--black);
+}
+
+.featureDescription {
+    color:var(--darkGray);
+    margin-top:-10px;
+}
+.ionContainer {
+    display:flex;
+    align-items: center;
+}
+
+.imageR {
+    height:auto;
+    max-width:100%;
+    border-radius:20px;
+}
+
+.imageR.two {
+    margin-top:200px;
 }
 
 .reasonsContainer {
     padding:1rem 5%;
-}
-
-.reasonContainer {
-    margin-bottom:1rem;
 }
 
 .promiseContainer {
@@ -125,28 +150,117 @@
 }
 
 .promiseTitle {
-    color:var(--black)
+    color:var(--black);
+    font-size:35px;
+    line-height:1.1;
+    font-weight:400;
 }
 
-.promiseDescription, .promises {
+.promiseDescription {
     color:var(--darkGray);
+    line-height:1.9;
 }
 
 .promises, .promise{
     padding:0;
+    line-height:1.6;
+    color:var(--darkGray);
+
 }
 
 .promises {
     display:flex;
     flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:40px;
+    padding-left:20px;
 }
 
 .promise {
     list-style:disc;
-    width:47.5%;
+    width:42.5%;
     margin-bottom:8px;
 }
 
+.moreContainer {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    width:80%;
+    margin:30px auto;
+
+}
+
+.more {
+    color:var(--black);
+    margin-bottom:10px;
+    display: inline-block;
+}
+
+.moreDescriptionCont{
+    align-self:flex-start;
+}
+
+.moreTitle{
+    color:var(--black);
+    font-weight:bold;
+}
+
+.moreDescription{
+    color:var(--darkGray);
+}
+.chairMore {
+    height:130px;
+}
+
+.testimonalContainer {
+    color:var(--black);
+    margin-top:150px;
+    /* padding:2rem 5%; */
+}
+
+.testimonals{
+    text-align:center;
+    font-size:35px;
+    font-weight:400;
+}
+
+.testimonal {
+    color:var(--darkGray);
+    line-height:1.6;
+    text-align:center;
+    padding: 0 100px;
+}
+
+.testimonalImageContainer {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* .jobContainer {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+} */
+
+.testimonalImage {
+    height:80px;
+    width:80px;
+    border-radius:50%;
+}
+
+.testimonalName {
+    text-align:center;
+    font-weight:bold;
+
+}
+
+.testimonalPosition {
+    text-align: center;
+    margin-top:-14px;
+}
 @media(min-width:768px) {
     .heroImageContainer {
         margin-left:-160px;
@@ -164,6 +278,7 @@
 
     .chairsContainer {
         flex-direction: row;
+        margin-top:60px;
     }
 
     .chair {

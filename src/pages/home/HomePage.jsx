@@ -8,7 +8,11 @@ import greenCouch from "../../assets/home/couch.png"
 import Nordic from "../../assets/home/nordic.png"
 import AeroChair from "../../assets/home/AeroChair.png"
 import greenChair from "../../assets/home/greenChair.png"
-
+import Button from '../../components/common/Button/Button';
+import { colors } from '../../utils/colors'
+import whyUs from "../../assets/home/why-choose-us-img.jpg";
+import gridImg from "../../assets/home/img-grid-1.jpg";
+import person from  "../../assets/home/person-1.png"
 
 
 
@@ -21,8 +25,10 @@ function Home() {
           <div>
             <h1 className={styles.heroTitle}>Modern Interior Design Studio</h1>
             <p className={styles.heroDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-            <button className={styles.shopButton}>Shop Now</button>
-            <button className={styles.exploreButton}>Explore</button>
+            <div className={styles.buttonContainer}>
+              <Button title="Shop Now" bgColor={colors.yellow} borderColor={colors.yellow}/>
+              <Button title="Explore" bgColor={colors.primary} borderColor={colors.whiteGradient} textColor={colors.white}/>
+            </div>
           </div>
           <div className={styles.heroImageContainer}>
             <img src={greenCouch} alt='A green couch' className={styles.heroImage}/>
@@ -37,7 +43,9 @@ function Home() {
           <p className={styles.chairDescription}>
           Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
           </p>
-          <button className={styles.chairButton}>Explore</button>
+          <div >
+            <Button title="Explore" textColor={colors.white}/>
+          </div>
         </div>
         <div className={styles.chairsContainer}>
           <div className={styles.chairContainer}>
@@ -58,33 +66,33 @@ function Home() {
         </div>
       </div>
       <div className={styles.qualitiesContainer}>
-        <h2 className={styles.qualityTitle}></h2>
+        <h2 className={styles.qualityTitle}>Why Choose Us</h2>
         <p className={styles.qualityDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
         <div className={styles.featuresContainer}>
           <div className={styles.featureContainer}>
             <div className={styles.iconContainer}>
-              <FiTruck size={30}  className={styles.icon}/>
+              <FiTruck size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
             </div>
             <p className={styles.featureTitle}>Fast & Free Shipping</p>
             <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
           </div>
           <div className={styles.featureContainer}>
             <div className={styles.iconContainer}>
-              <FiShoppingCart size={30} className={styles.icon}/>
+              <FiShoppingCart size={40} className={styles.icon} color={colors.black} style={{margin:10}}/>
             </div>
             <p className={styles.featureTitle}>Easy Shipping</p>
             <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
           </div>
           <div className={styles.featureContainer}>
             <div className={styles.iconContainer}>
-              <HiOutlineSupport  size={30}  className={styles.icon}/>
+              <HiOutlineSupport  size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
             </div>
             <p className={styles.featureTitle}>24/7 Support</p>
             <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
           </div>
           <div className={styles.featureContainer}>
             <div className={styles.iconContainer}>
-              <TbTruckReturn  size={30}  className={styles.icon}/>
+              <TbTruckReturn  size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
             </div>
             <p className={styles.featureTitle}>Hassle Free Returns</p>
             <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -93,10 +101,10 @@ function Home() {
       </div>
       <div className={styles.reasonsContainer}>
         <div className={styles.reasonContainer}>
-          <img src="../../assets/home/why-choose-us-img.jpg" alt="A little blue couch with fruits" className={styles.imageR}/>
+          <img src={whyUs} alt="A little blue couch with fruits" className={styles.imageR}/>
         </div>
         <div className={styles.reasonContainer}>
-          <img src="../../assets/home/img-grid-1.jpg" alt="A grid of three images: a stool,couch and a lampshed" className={styles.imageR}/>
+          <img src={gridImg} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} ${styles.two}`}/>
         </div>
       </div>
 
@@ -109,9 +117,65 @@ function Home() {
           <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
           <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
         </ul>
-        <button className={styles.chairButton}>Explore</button>
+        <Button title="Explore"  textColor={colors.white}/>
       </div>
 
+      <div className={styles.moresContainer}>
+        <div className={styles.moreContainer}>
+          <div className={styles.moreImageContainer}>
+            <img src={Nordic} alt="A cream four-legged chair" className={styles.chairMore}/>
+          </div>
+          <div className={styles.moreDescriptionCont}>
+            <p className={styles.moreTitle}>Nordic Chair</p>
+            <p className={styles.moreDescription}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+            <a href="#" className={styles.more}>Read More</a>
+          </div>
+        </div>
+        <div className={styles.moreContainer}>
+          <div className={styles.moreImageContainer}>
+            <img src={AeroChair} alt="A cream four-legged chair" className={styles.chairMore}/>
+          </div>
+          <div className={styles.moreDescriptionCont}>
+            <p className={styles.moreTitle}>Aero Chair</p>
+            <p className={styles.moreDescription}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+            <a href="#" className={styles.more}>Read More</a>
+          </div>
+        </div>
+        <div className={styles.moreContainer}>
+          <div className={styles.moreImageContainer}>
+            <img src={greenChair} alt="A cream four-legged chair" className={styles.chairMore}/>
+          </div>
+          <div className={styles.moreDescriptionCont}>
+            <p className={styles.moreTitle}>Ergonomic Chair</p>
+            <p className={styles.moreDescription}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+            <a href="#" className={styles.more}>Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.testimonalContainer}>
+        <p className={styles.testimonals}>Testimonials</p>
+        <p className={styles.testimonal}>
+        “Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”
+        </p>
+        <div className={styles.testimonalImageContainer}>
+          <img src={person} alt="An image of the CEO" className={styles.testimonalImage}/>
+        </div>
+        <div className={styles.jobContainer}>
+          <p className={styles.testimonalName}>Maria Jones</p>
+          <p className={styles.testimonalPosition}>CEO, Co-Founder, XYZ Inc.</p>
+        </div>
+      </div>
+
+      <div className={styles.blogContainer}>
+        <h2 className={styles.blogTitle}>Recent Blog</h2>
+        <a href="#" className={styles.blogLink}>View All Posts</a>
+        <div className={styles.blogContainers}>
+          <div className={styles.blogContainer}>
+            
+          </div>
+        </div>
+      </div>
     </Fragment>
   )
 }
