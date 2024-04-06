@@ -63,6 +63,7 @@
 
 .chairDescription {
     color:var(--darkGray);
+    margin-top:0;
 }
 
 .qualityDescription {
@@ -139,6 +140,9 @@
 
 .imageR.two {
     margin-top:200px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
 }
 
 .reasonsContainer {
@@ -261,6 +265,26 @@
     text-align: center;
     margin-top:-14px;
 }
+
+.homeblogContainer {
+    padding:10px 5%;
+    padding-bottom:200px;
+}
+
+@media(min-width:600px) {
+    .homeblogContainer {
+        display:flex;
+        width:100%;
+        flex-wrap:wrap;
+        align-items: center;
+    }
+    
+    .homeBlog {
+        width:40%;
+    }
+}
+
+
 @media(min-width:768px) {
     .heroImageContainer {
         margin-left:-160px;
@@ -288,6 +312,25 @@
     .chairContainer {
         width:33%;
     }
+
+    .moresContainer {
+        display:flex;
+        flex-wrap:wrap;
+        padding:10px 5%;
+        margin: 60px 0;
+    }
+
+    .moreContainer {
+        width: 50%;
+        gap:0;
+        margin:0;
+    }
+
+    .testimonal {
+        
+        padding:0 154px;
+    }
+ 
 }
 
 @media(min-width:992px) {
@@ -300,4 +343,72 @@
         margin:-50px -278px 0 0;
     }
 
+    .mainchairContainer {
+        display:flex;
+    }
+
+    .productContainer {
+        width:25%;
+    }
+
+    .chairsContainer {
+        width:75%;
+        margin-top:0;
+    }
+
+    .qualitiesContainer {
+        display:flex;
+        align-items:center;
+    }
+
+    .qualityContainer {
+        width:60%;
+    }
+
+    .reasonsContainer {
+        width:40%;
+        padding:0;
+    }
+
+    .reasonPromContainer {
+        display:flex;
+        margin-top:50px;
+        padding:10px 5%;
+    }
+
+    .reasonContainer {
+        width:50%;
+    }
+
+    .promiseContainer {
+        width:50%;
+    }
+
+    .promises {
+        gap:25px;
+        margin-bottom:9px;
+    }
+
+    .imageR.two {
+        margin-top:0;
+    }
+
+
+    .moreContainer {
+        width: 33%;
+       
+    }
+
+    .testimonal {
+        padding:0 190px;
+        font-size:20px;
+    }
+
+    .homeBlog {
+        width:32%;
+    }
+
+    .homeblogContainer {
+        margin-bottom:200px;
+    }
 }

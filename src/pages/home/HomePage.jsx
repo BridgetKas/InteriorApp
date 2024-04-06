@@ -13,6 +13,12 @@ import { colors } from '../../utils/colors'
 import whyUs from "../../assets/home/why-choose-us-img.jpg";
 import gridImg from "../../assets/home/img-grid-1.jpg";
 import person from  "../../assets/home/person-1.png"
+import Blog from '../../components/common/Blog/Blog';
+import stools from "../../assets/home/post-1.jpg"
+import coffeeTable from "../../assets/home/post-2.jpg"
+import shapes from "../../assets/home/post-3.jpg"
+import Form from '../../components/common/Form/FormComp';
+
 
 
 
@@ -66,60 +72,62 @@ function Home() {
         </div>
       </div>
       <div className={styles.qualitiesContainer}>
-        <h2 className={styles.qualityTitle}>Why Choose Us</h2>
-        <p className={styles.qualityDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-        <div className={styles.featuresContainer}>
-          <div className={styles.featureContainer}>
-            <div className={styles.iconContainer}>
-              <FiTruck size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
+        <div className={styles.qualityContainer}>
+          <h2 className={styles.qualityTitle}>Why Choose Us</h2>
+          <p className={styles.qualityDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+          <div className={styles.featuresContainer}>
+            <div className={styles.featureContainer}>
+              <div className={styles.iconContainer}>
+                <FiTruck size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
+              </div>
+              <p className={styles.featureTitle}>Fast & Free Shipping</p>
+              <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
             </div>
-            <p className={styles.featureTitle}>Fast & Free Shipping</p>
-            <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
-          </div>
-          <div className={styles.featureContainer}>
-            <div className={styles.iconContainer}>
-              <FiShoppingCart size={40} className={styles.icon} color={colors.black} style={{margin:10}}/>
+            <div className={styles.featureContainer}>
+              <div className={styles.iconContainer}>
+                <FiShoppingCart size={40} className={styles.icon} color={colors.black} style={{margin:10}}/>
+              </div>
+              <p className={styles.featureTitle}>Easy Shipping</p>
+              <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
             </div>
-            <p className={styles.featureTitle}>Easy Shipping</p>
-            <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
-          </div>
-          <div className={styles.featureContainer}>
-            <div className={styles.iconContainer}>
-              <HiOutlineSupport  size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
+            <div className={styles.featureContainer}>
+              <div className={styles.iconContainer}>
+                <HiOutlineSupport  size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
+              </div>
+              <p className={styles.featureTitle}>24/7 Support</p>
+              <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
             </div>
-            <p className={styles.featureTitle}>24/7 Support</p>
-            <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
-          </div>
-          <div className={styles.featureContainer}>
-            <div className={styles.iconContainer}>
-              <TbTruckReturn  size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
+            <div className={styles.featureContainer}>
+              <div className={styles.iconContainer}>
+                <TbTruckReturn  size={40}  className={styles.icon} color={colors.black} style={{margin:10}}/>
+              </div>
+              <p className={styles.featureTitle}>Hassle Free Returns</p>
+              <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
             </div>
-            <p className={styles.featureTitle}>Hassle Free Returns</p>
-            <p className={styles.featureDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
           </div>
         </div>
-      </div>
-      <div className={styles.reasonsContainer}>
-        <div className={styles.reasonContainer}>
+        <div className={styles.reasonsContainer}>
           <img src={whyUs} alt="A little blue couch with fruits" className={styles.imageR}/>
         </div>
-        <div className={styles.reasonContainer}>
-          <img src={gridImg} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} ${styles.two}`}/>
-        </div>
       </div>
 
-      <div className={styles.promiseContainer}>
-        <h2 className={styles.promiseTitle}>We Help You Make Modern Interior Design</h2>
-        <p className={styles.promiseDescription}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
-        <ul className={styles.promises}>
-          <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
-          <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
-          <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
-          <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
-        </ul>
-        <Button title="Explore"  textColor={colors.white}/>
-      </div>
+      <div className={styles.reasonPromContainer}>
+          <div className={styles.reasonContainer}>
+            <img src={gridImg} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} ${styles.two}`}/>
+          </div>
 
+        <div className={styles.promiseContainer}>
+          <h2 className={styles.promiseTitle}>We Help You Make Modern Interior Design</h2>
+          <p className={styles.promiseDescription}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+          <ul className={styles.promises}>
+            <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
+            <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
+            <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
+            <li className={styles.promise}>Donec vitae odio quis nisl dapibus malesuada</li>
+          </ul>
+          <Button title="Explore"  textColor={colors.white}/>
+      </div>
+      </div>
       <div className={styles.moresContainer}>
         <div className={styles.moreContainer}>
           <div className={styles.moreImageContainer}>
@@ -141,7 +149,7 @@ function Home() {
             <a href="#" className={styles.more}>Read More</a>
           </div>
         </div>
-        <div className={styles.moreContainer}>
+        <div className={`${styles.moreContainer} ${styles.Two}`}>
           <div className={styles.moreImageContainer}>
             <img src={greenChair} alt="A cream four-legged chair" className={styles.chairMore}/>
           </div>
@@ -170,11 +178,14 @@ function Home() {
       <div className={styles.blogContainer}>
         <h2 className={styles.blogTitle}>Recent Blog</h2>
         <a href="#" className={styles.blogLink}>View All Posts</a>
-        <div className={styles.blogContainers}>
-          <div className={styles.blogContainer}>
-            
-          </div>
+        <div className={styles.homeblogContainer}>
+          <Blog blogTitle="First Time Home Owner Ideas" name="Kristin Watson" date="Dec 19, 2021" image={stools} className={styles.homeBlog}/>
+          <Blog blogTitle="How To Keep Your Furniture Clean" name="Robert Fox" date="Dec 15, 2021" image={coffeeTable} className={styles.homeBlog}/>
+          <Blog blogTitle="Small Space Furniture Apartment Ideas" name="Kristin Watson" date="Dec 12, 2021" image={shapes} className={styles.homeBlog}/>
         </div>
+      </div>
+      <div className={styles.formContainer}>
+       <Form/>
       </div>
     </Fragment>
   )

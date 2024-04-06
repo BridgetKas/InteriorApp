@@ -1,10 +1,11 @@
 import React from 'react'
-import "./Blog.module.css"
 
-function Blog() {
+function BlogPage() {
   return (
-    <div>Blog</div>
+    <div>
+      
+    </div>
   )
 }
 
-export default Blog
+export default BlogPage

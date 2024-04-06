@@ -6,5 +6,9 @@ export const colors = {
     white: "#fff",
     whiteGradient: "rgba(255, 255, 255, 0.5)",
     darkGray: "#6a6a6a",
+    paleBlue:"#adb5bd",
 
 }
+
+
+
