@@ -106,16 +106,23 @@ h1 {
     width:100%;
 }
 
-@media (min-width:768px) {
 
+@media (min-width:660px) {
     .linksContainer {
         width:50%;
     }
 
     .companyContainer {
+        flex-wrap: wrap;
         gap:0;
     }
-       
+}
+
+@media (min-width:768px) {
+
+    .linksContainer {
+        width:25%;
+    }
 }
 
 @media (min-width:992px) {

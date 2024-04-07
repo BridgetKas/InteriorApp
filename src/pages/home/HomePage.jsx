@@ -26,6 +26,8 @@ import Form from '../../components/common/Form/FormComp';
 function Home() {
   return (
     <Fragment>
+
+      {/* ****HERO SECTION */}
       <div className={styles.mainContainer}>
         <div className={styles.heroContainer}>
           <div>
@@ -41,6 +43,8 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* PRODUCT SECTION */}
       <div className={styles.mainchairContainer}>
         <div className={styles.productContainer}>
           <h2 className={styles.chairTitle}>
@@ -71,6 +75,8 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* Why Chose Us */}
       <div className={styles.qualitiesContainer}>
         <div className={styles.qualityContainer}>
           <h2 className={styles.qualityTitle}>Why Choose Us</h2>
@@ -110,9 +116,8 @@ function Home() {
           <img src={whyUs} alt="A little blue couch with fruits" className={styles.imageR}/>
         </div>
       </div>
-
       <div className={styles.reasonPromContainer}>
-          <div className={styles.reasonContainer}>
+          <div className={styles.reasonsContainer}>
             <img src={gridImg} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} ${styles.two}`}/>
           </div>
 
@@ -128,6 +133,8 @@ function Home() {
           <Button title="Explore"  textColor={colors.white}/>
       </div>
       </div>
+
+      {/* CHAIR SECTION  */}
       <div className={styles.moresContainer}>
         <div className={styles.moreContainer}>
           <div className={styles.moreImageContainer}>
@@ -161,6 +168,7 @@ function Home() {
         </div>
       </div>
 
+      {/* TESTIMONAL SECTION */}
       <div className={styles.testimonalContainer}>
         <p className={styles.testimonals}>Testimonials</p>
         <p className={styles.testimonal}>
@@ -175,9 +183,13 @@ function Home() {
         </div>
       </div>
 
+      {/* BLOG SECTION */}
       <div className={styles.blogContainer}>
-        <h2 className={styles.blogTitle}>Recent Blog</h2>
-        <a href="#" className={styles.blogLink}>View All Posts</a>
+        <div className={styles.blogpostContainer}>
+          <h2 className={styles.blogTitle}>Recent Blog</h2>
+          <a href="#" className={styles.blogLink}>View All Posts</a>
+        </div>
+        {/* the padding for the outer container needs to get changed */}
         <div className={styles.homeblogContainer}>
           <Blog blogTitle="First Time Home Owner Ideas" name="Kristin Watson" date="Dec 19, 2021" image={stools} className={styles.homeBlog}/>
           <Blog blogTitle="How To Keep Your Furniture Clean" name="Robert Fox" date="Dec 15, 2021" image={coffeeTable} className={styles.homeBlog}/>
