@@ -70,6 +70,10 @@
     margin-top:0;
 }
 
+.qualitiesContainer {
+    padding:10px 5%;
+}
+
 .qualityDescription {
     color:var(--darkGray);
     margin-top:-10px;
