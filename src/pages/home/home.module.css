@@ -105,10 +105,6 @@
     transform:translateY(10px);
 }
 
-.qualitiesContainer {
-    padding:1rem 5%;
-}
-
 .qualityTitle {
     color:var(--black)
 }
@@ -154,7 +150,7 @@
 }
 
 .promiseContainer {
-    padding:0.2rem 10%;
+    padding:0.2rem 5%;
 }
 
 .promiseTitle {
