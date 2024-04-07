@@ -6,7 +6,7 @@ function Blog(props) {
   return (
     <div className={` ${className}`}>
       <div className={styles.blogContainer}>
-        <div className={styles.blogImage}>
+        <div className={styles.blogImageContainer}>
          <img src={image} className={styles.bgImage}/>
         </div>
         <div className={styles.bgContainer}>

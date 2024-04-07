@@ -189,7 +189,6 @@ function Home() {
           <h2 className={styles.blogTitle}>Recent Blog</h2>
           <a href="#" className={styles.blogLink}>View All Posts</a>
         </div>
-        {/* the padding for the outer container needs to get changed */}
         <div className={styles.homeblogContainer}>
           <Blog blogTitle="First Time Home Owner Ideas" name="Kristin Watson" date="Dec 19, 2021" image={stools} className={styles.homeBlog}/>
           <Blog blogTitle="How To Keep Your Furniture Clean" name="Robert Fox" date="Dec 15, 2021" image={coffeeTable} className={styles.homeBlog}/>

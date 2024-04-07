@@ -195,7 +195,7 @@
     align-items:center;
     justify-content: center;
     gap:10px;
-    width:80%;
+    width:100%;
 }
 
 .more {
@@ -273,14 +273,14 @@
 }
 
 .blogContainer {
-    padding:10px 10%;
+    padding:10px 5%;
 }
 
 .blogpostContainer {
     display:flex;
     flex-direction: column;
     color:var(--black);
-    width:91%;
+    width:100%;
     margin-bottom: 3rem;
 }
 
@@ -305,12 +305,13 @@
         display:flex;
         width:100%;
         flex-wrap:wrap;
-        align-items: center;
+        gap:10%;
     }
     
     .homeBlog {
-        width:40%;
+        width:45%;
     }
+
 }
 
 
@@ -360,11 +361,7 @@
         padding:0 154px;
     }
 
-    .blogpostContainer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+    
 
     .blogLink {
         padding:0;
@@ -442,6 +439,16 @@
     .testimonal {
         padding:0 190px;
         font-size:18px;
+    }
+
+    .blogpostContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .homeblogContainer {
+        gap:1%;
     }
 
     .homeBlog {
