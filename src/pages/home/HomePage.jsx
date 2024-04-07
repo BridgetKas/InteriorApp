@@ -18,6 +18,7 @@ import stools from "../../assets/home/post-1.jpg"
 import coffeeTable from "../../assets/home/post-2.jpg"
 import shapes from "../../assets/home/post-3.jpg"
 import Form from '../../components/common/Form/FormComp';
+import Header from '../../layout/Header/Header';
 
 
 
@@ -26,23 +27,12 @@ import Form from '../../components/common/Form/FormComp';
 function Home() {
   return (
     <Fragment>
-
       {/* ****HERO SECTION */}
-      <div className={styles.mainContainer}>
-        <div className={styles.heroContainer}>
-          <div>
-            <h1 className={styles.heroTitle}>Modern Interior Design Studio</h1>
-            <p className={styles.heroDescription}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-            <div className={styles.buttonContainer}>
-              <Button title="Shop Now" bgColor={colors.yellow} borderColor={colors.yellow}/>
-              <Button title="Explore" bgColor={colors.primary} borderColor={colors.whiteGradient} textColor={colors.white}/>
-            </div>
-          </div>
-          <div className={styles.heroImageContainer}>
-            <img src={greenCouch} alt='A green couch' className={styles.heroImage}/>
-          </div>
-        </div>
-      </div>
+      <Header 
+        title="Modern Interior Design Studio" 
+        titleDescription="Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique."
+        imageSrc={greenCouch}
+      />
 
       {/* PRODUCT SECTION */}
       <div className={styles.mainchairContainer}>

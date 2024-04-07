@@ -1,0 +1,49 @@
+.heroContainer {
+    background-color:var(--primary);
+    padding:1rem 5%;
+    min-height:50vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.heroTitle {
+    color:var(--white);
+    font-weight:bold;
+}
+
+.heroDescription {
+    color:var(--whiteGradient);
+}
+
+.button {
+    margin: 10px 0 40px 0;
+}
+
+.buttonContainer {
+    display:flex;
+    gap:15px;
+}
+
+.heroImageContainer {
+    margin-right:-10px;
+    margin-left:0;
+}
+
+@media(min-width:768px) {
+    .heroImageContainer {
+        margin-left:-160px;
+        margin-right:0;
+    }
+}
+
+@media(min-width:992px) {
+    .heroContainer {
+        flex-direction:row;
+        align-items:flex-start;
+    }
+
+    .heroImageContainer {
+        margin:-50px -124px 0 0;
+    }
+}
