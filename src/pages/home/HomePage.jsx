@@ -19,6 +19,10 @@ import coffeeTable from "../../assets/home/post-2.jpg"
 import shapes from "../../assets/home/post-3.jpg"
 import Form from '../../components/common/Form/FormComp';
 import Header from '../../layout/Header/Header';
+import gridImg2 from "../../assets/home/img-grid-2.jpg";
+import gridImg3 from "../../assets/home/img-grid-3.jpg";
+
+
 
 
 
@@ -107,8 +111,16 @@ function Home() {
         </div>
       </div>
       <div className={styles.reasonPromContainer}>
-          <div className={styles.reasonsContainer}>
-            <img src={gridImg} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} ${styles.two}`}/>
+          <div className={styles.reasonsKontainer}>
+            <div className={styles.div1}>
+              <img src={gridImg} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
+            </div>
+            <div className={styles.div2}>
+              <img src={gridImg2} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
+            </div>
+            <div className={styles.div3}>
+              <img src={gridImg3} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
+            </div>
           </div>
 
         <div className={styles.promiseContainer}>
