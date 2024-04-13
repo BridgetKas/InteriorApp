@@ -21,12 +21,7 @@ import Form from '../../components/common/Form/FormComp';
 import Header from '../../layout/Header/Header';
 import gridImg2 from "../../assets/home/img-grid-2.jpg";
 import gridImg3 from "../../assets/home/img-grid-3.jpg";
-
-
-
-
-
-
+import ProductCard from '../../specific/Products/ProductCard';
 
 function Home() {
   return (
@@ -52,21 +47,26 @@ function Home() {
           </div>
         </div>
         <div className={styles.chairsContainer}>
-          <div className={styles.chairContainer}>
-            <img src={Nordic} alt="A cream four-legged chair" className={styles.chair}/>
-            <p className={styles.chairName}>Nordic Chair</p>
-            <p className={styles.chairCost}>$50</p>
-          </div>
-          <div className={styles.chairContainer}>
-            <img src={AeroChair} alt="A cream four-legged chair" className={styles.chair}/>
-            <p className={styles.chairName}>Aero Chair</p>
-            <p className={styles.chairCost}>$78</p>
-          </div>
-          <div className={styles.chairContainer}>
-            <img src={greenChair} alt="A green four-legged chair" className={styles.chair}/>
-            <p className={styles.chairName}>Ernogomic Chair</p>
-            <p className={styles.chairCost}>$48</p>
-          </div>
+            <ProductCard 
+              imgSrc={Nordic} 
+              name="Nordic Chair" 
+              price="$50" 
+              altInfo="A three legged chair"
+            />
+
+            <ProductCard 
+              imgSrc={AeroChair} 
+              name="Aero Chair" 
+              price="$78" 
+              altInfo="A cream four-legged chair"
+            />
+
+            <ProductCard 
+              imgSrc={greenChair} 
+              name="Ernogomic Chair" 
+              price="$48" 
+              altInfo="A green four-legged chair"
+            />
         </div>
       </div>
 

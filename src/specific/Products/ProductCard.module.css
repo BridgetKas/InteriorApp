@@ -1,0 +1,27 @@
+.chairContainer {
+    margin-top:90px;
+}
+
+.chairContainer:hover {
+    background-color:var(--whiteGraient);
+}
+
+.chairContainer:hover {
+    transform:translateY(10px);
+}
+
+.chair {
+    transition: ease-out 0.5ms;
+}
+
+.chairName,.chairCost {
+    text-align:center;
+    color:var(--black);
+    font-weight:bold;
+}
+
+@media(min-width:768px) {
+    .chair {
+        height:250px;
+    }
+}

@@ -1,9 +1,14 @@
 import React from 'react'
 import "./ProductCard.module.css"
+import styles from "./ProductCard.module.css"
 
-function ProductCard() {
+function ProductCard({imgSrc, name, price,altInfo}) {
   return (
-    <div>ProductCard</div>
+    <div className={styles.chairContainer}>
+      <img src={imgSrc} alt={altInfo} className={styles.chair}/>
+      <p className={styles.chairName}>{name}</p>
+      <p className={styles.chairCost}>{price}</p>
+    </div>
   )
 }
 

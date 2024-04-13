@@ -7,14 +7,14 @@ import Service  from './pages/Services/ServicePage'
 import Blog  from './pages/Blog/BlogPage'
 import Contact  from './pages/Contact/ContactPage'
 import Cart  from './pages/Cart/CartPage'
-import FooterTab from "./layout/Footer/FooterTab"
+import { colors } from "./utils/colors"
 
 
 const router = createBrowserRouter([
   {
     path:"/",
     element:<LayoutPage/>,
-    errorElement:<h1 style={{color:"black"}}>Ohh Sorry Try Again</h1>,
+    errorElement:<h1 style={colors.black}>Ohh Sorry Try Again</h1>,
     children: [
       {
         index: true,
