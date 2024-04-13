@@ -5,10 +5,10 @@ import styles from "./NavBar.module.css"
 
 const menu = [
     { path: '/', label: "Home" },
-    { path: '/about', label: "About us" },
-    { path: '/blog', label: "Blog" },
-    { path: '/services', label: "Services" },
     { path: '/shop', label: "Shop" },
+    { path: '/about', label: "About us" },
+    { path: '/services', label: "Services" },
+    { path: '/blog', label: "Blog" },
     { path: '/contact', label: "Contact us" },
 ]
 
