@@ -22,6 +22,7 @@ import Header from '../../layout/Header/Header';
 import gridImg2 from "../../assets/home/img-grid-2.jpg";
 import gridImg3 from "../../assets/home/img-grid-3.jpg";
 import ProductCard from '../../specific/Products/ProductCard';
+import Testimonal from '../../components/common/Testimonal/Testimonal';
 
 function Home() {
   return (
@@ -171,7 +172,7 @@ function Home() {
       </div>
 
       {/* TESTIMONAL SECTION */}
-      <div className={styles.testimonalContainer}>
+      {/* <div className={styles.testimonalContainer}>
         <p className={styles.testimonals}>Testimonials</p>
         <p className={styles.testimonal}>
         “Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”
@@ -183,7 +184,11 @@ function Home() {
           <p className={styles.testimonalName}>Maria Jones</p>
           <p className={styles.testimonalPosition}>CEO, Co-Founder, XYZ Inc.</p>
         </div>
+      </div> */}
+      <div>
+        <Testimonal name="Maria Jones" position="CEO, Co-Founder, XYZ Inc." imgSrc={person}testimonalDescr="“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”"/>
       </div>
+
 
       {/* BLOG SECTION */}
       <div className={styles.blogContainer}>

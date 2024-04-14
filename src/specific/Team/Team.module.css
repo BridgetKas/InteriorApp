@@ -1,0 +1,48 @@
+.headingContainer {
+    display:flex;
+    text-align:center;
+    justify-content:center
+}
+
+.teamContainer {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    padding:10px 10%;
+}
+
+.imageTeam {
+    max-width:100%;
+}
+
+.nameTeam {
+    font-weight:bold;
+    font-size:30px;
+    text-decoration: underline;
+    text-align:left;
+    color:var(--black);
+}
+
+.job , .descrption {
+    color:var(--darkGray);
+    text-align:left;
+}
+
+.link {
+    text-decoration: underline;
+    color:var(--black);
+}
+
+@media (min-width:768px) {
+    .teamContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:992px) {
+    .teamContainer {
+        grid-template-columns: repeat(4,1.8fr);
+        padding:10px 5%;
+    }
+
+}

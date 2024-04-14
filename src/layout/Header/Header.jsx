@@ -7,7 +7,7 @@ import Button from '../../components/common/Button/Button'
 function Header({title,titleDescription,imageSrc,showBtn=true,showImage=true,showDescription=true}) {
 
     return (
-        <div className={styles.heroContainer}>
+        <div className={styles.heroContainer} style={{paddingBottom: !showImage ? "100px":0}}>
           <div>
             <h1 className={styles.heroTitle}>{title}</h1>
             {showDescription && <p className={styles.heroDescription}>{titleDescription}</p>}
