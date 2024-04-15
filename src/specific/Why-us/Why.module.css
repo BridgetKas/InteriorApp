@@ -1,0 +1,27 @@
+.featureContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    padding:2.5%;
+}
+
+.featureTitle {
+    color:var(--black);
+}
+
+.featureDescription {
+    color:var(--darkGray);
+    margin-top:-10px;
+}
+.ionContainer {
+    display:flex;
+    align-items: center;
+}
+
+
+@media (min-width:992px) {
+    .featureContainer {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}

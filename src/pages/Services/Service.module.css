@@ -1,0 +1,61 @@
+.mainchairContainer {
+    padding:4.5rem 5%;
+}
+
+.productContainer {
+    display:flex;
+    flex-direction: column;  
+}
+
+.chairsContainer {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.chairTitle,.qualityTitle{
+    color:var(--black);
+    font-size:25px;
+}
+
+.chairDescription {
+    color:var(--darkGray);
+    margin-top:0;
+}
+
+
+@media(min-width:768px) {
+    .mainchairContainer {
+        flex-wrap:wrap;
+        display:flex;
+    }
+
+    .productContainer, .chairsContainer{
+        width:100%;
+    }
+
+    .chairsContainer {
+        flex-direction: row;
+        margin-top:60px;
+    }
+
+    .chair {
+        height:200px;
+    }
+}  
+
+@media(min-width:992px) {
+    .mainchairContainer {
+        display:flex;
+        justify-content:space-between;
+    }
+
+    .productContainer {
+        width:25%;
+    }
+
+    .chairsContainer {
+        width:70%;
+        margin-top:0;
+    }
+}
