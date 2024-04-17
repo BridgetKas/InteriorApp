@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from"./Blog.module.css"
 
+
 function Blog(props) {
+
   const {blogTitle,name,date,image,className} = props
   return (
     <div className={` ${className}`}>
@@ -14,6 +16,7 @@ function Blog(props) {
           <p className={styles.bgInfo}> <span className={styles.span}>by </span >{name} <span className={styles.span}>on</span> {date}</p>
         </div>
       </div>
+
     </div>
   )
 }

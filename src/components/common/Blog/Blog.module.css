@@ -1,5 +1,10 @@
 
-
+.mainBlogContainer {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    padding:100px 5% 50px 5%;
+}
 
 .blogContainer {
     margin-bottom:20px;
@@ -11,7 +16,6 @@
     height:auto;
     margin-bottom:10px;
 }
-
 
 .bgTitle,.bgInfo {
     font-weight:bold;
@@ -40,9 +44,21 @@
 }
 
 
+@media (min-width:576px) {
+    .mainBlogContainer {
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+
 @media(min-width:600px) {
     .bgContainer {
         padding:0 20px;
     }
+}
 
+@media (min-width:768px) {
+    .mainBlogContainer {
+        grid-template-columns:repeat(3,1fr);
+    }
 }
