@@ -1,0 +1,25 @@
+.mainContactContainer {
+    display:flex;
+    gap:20px;
+    align-items:center;
+    justify-content: center;
+    padding:10px 18.5%;
+    margin: 100px 0 ;
+}
+
+.contactContainer {
+    display:flex;
+    gap:30px;
+    align-items:center;
+    width:33%;
+}
+
+.iconContainer {
+    background-color:var(--primary);
+    border-radius:13px;
+   padding:14px 16px;
+}
+
+.contactInformation {
+    color:var(--darkGray);
+}
