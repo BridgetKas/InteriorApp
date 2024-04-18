@@ -25,3 +25,9 @@
         height:250px;
     }
 }
+
+@media (min-width:992px) {
+    .chairContainer {
+        margin-top: 0;
+    }
+}
