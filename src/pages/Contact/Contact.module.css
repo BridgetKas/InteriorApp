@@ -1,10 +1,11 @@
+/* ****contact  CSS styles */
 .mainContactContainer {
     display:flex;
     gap:20px;
     align-items:center;
     justify-content: center;
     padding:10px 18.5%;
-    margin: 100px 0 ;
+    margin: 100px 0 50px 0 ;
 }
 
 .contactContainer {
@@ -22,4 +23,43 @@
 
 .contactInformation {
     color:var(--darkGray);
+}
+
+/* ****Form CSS styles */
+
+.formContainer {
+    padding:10px 18%;
+    margin-bottom:50px;
+}
+
+.formInputContainer {
+    display:flex;
+    text-align: flexstart;
+    gap:10px;
+}
+
+.inputContainer {
+    width:49%;
+}
+
+.input {
+    width:87%;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid var(--darkGray);
+}
+
+.formLabel {
+    color:var(--darkGray);
+    margin-bottom:7px;
+  margin-left:2px;
+}
+
+.input.inputEmail {
+    width:93%;
+}
+
+.input.inputTextArea {
+    width:99%;
+    padding:50px 0;
 }
