@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./Contact.module.css"
+import Button from '../../components/common/Button/Button'
 
 function FormC() {
   return (
@@ -24,7 +25,7 @@ function FormC() {
                 <p className={styles.formLabel}>Message</p>
                 <textarea className={`${styles.input} ${styles.inputTextArea}`}></textarea>
             </div>
-
+             <Button  title="Send Message"/>
         </form>
     </div>
   )

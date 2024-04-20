@@ -1,0 +1,28 @@
+.container {
+    padding:10px 8%;
+}
+
+.cartHeading {
+    display:flex;
+    align-self: center;
+    gap:20px;
+    justify-content: space-between;
+    margin:auto;
+    overflow-x: auto;
+}
+
+.cartTitle {
+    color:var(--black);
+    width:150px;
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:8px;
+    text-align:center;
+    flex:0 0 auto;
+    max-width:200px;
+}
+
+hr {
+    border:1px solid var(--black);
+}
+    

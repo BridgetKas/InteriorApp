@@ -13,7 +13,6 @@ function ContactPage() {
        <Header title="Contact" imageSrc={greenCouch}titleDescription="Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique."/>
         <Contact/>
         <FormC/>
-        <Button title="Send Message"/>
         <Form/>
 
     </div>
