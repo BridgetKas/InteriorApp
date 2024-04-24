@@ -28,6 +28,28 @@ const items = [
 ]
 
 function Cart() {
+
+  const [quantity,setQuantity] = useState(1);
+
+  const [items, setItems] = useState(items)
+
+  const handleChair = (chair) => setItems([...items,chair]);
+
+  const handleQuantityIncrease = (n) => setQuantity(n => n+1);
+
+  const handleQuantityDecrease = (n) => setQuantity(n => n-1);
+
+  const itemTotal = (item) => item.quantity * item.price;
+
+  const cartTotal = () => {
+    let total = 0;
+    items.forEach((item) => {
+      total += itemTotal(item)
+    });
+    return total;
+  }
+
+
   return (
     <div>
       <Header title="Cart" showBtn={false} showImage={false} showDescription={false}/>
