@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState , useEffect} from 'react'
 import styles from "./Cart.module.css"
 import Header from '../../layout/Header/Header'
 import aeroChair from "../../assets/home/AeroChair.png"
@@ -8,7 +8,7 @@ import {colors} from "../../utils/colors"
 import Button from '../../components/common/Button/Button'
 
 
-const items = [
+const itemsArr = [
   {
       image:aeroChair,
       name:"Product1",
@@ -29,15 +29,18 @@ const items = [
 
 function Cart() {
 
-  const [quantity,setQuantity] = useState(1);
-
-  const [items, setItems] = useState(items)
+  const [items, setItems] = useState(itemsArr)
 
   const handleChair = (chair) => setItems([...items,chair]);
 
-  const handleQuantityIncrease = (n) => setQuantity(n => n+1);
+  const handleQuantityIncrease = (id) => {
+    let incrementIndex = items.findIndex ((item) => item.id === id)
+    let updatedItems = [...items]
+    updatedItems[incrementIndex].quantity ++
+    setItems(updatedItems)
+  };
 
-  const handleQuantityDecrease = (n) => setQuantity(n => n-1);
+  // const handleQuantityDecrease = (n) => setQuantity(n => n-1);
 
   const itemTotal = (item) => item.quantity * item.price;
 
@@ -79,10 +82,10 @@ function Cart() {
                       <button>-</button>
                     </div>
                     <div className={styles.inputContainer}>
-                      <input type="number" className={styles.input} value="1"/>
+                      <input type="number" className={styles.input} value={item.quantity}/>
                     </div>
                     <div className={styles.btnContainer}>
-                      <button>+</button>
+                      <button onClick={() => handleQuantityIncrease(item.id)}>+</button>
                     </div>
                   </div>
                   <p className={styles.itemTotal}>${item.total}</p>
@@ -141,3 +144,4 @@ function Cart() {
 }
 
 export default Cart
+
