@@ -1,0 +1,219 @@
+.formContainer {
+    display:flex;
+    flex-direction:column;
+}
+
+.checkOutContainer {
+    padding:10px 10% 180px 10%;
+}
+
+.returnContainer {
+    border:1px solid var(--lightGray);
+    padding:10px 18px;
+    margin-top:60px;    
+}
+
+.returnName, .returnLink{
+    color:var(--darkGray);
+}
+
+.returnLink {
+    color:var(--black);
+    text-decoration:underline;
+}
+
+.fieldContainer {
+    margin-bottom:-10px;
+}
+
+.formTitle {
+    font-weight:500;
+    color:var(--black);
+    font-size:30px;
+}
+
+.form {
+    background-color:var(--white);
+    padding:8px 12px;
+    width:95%;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top:50px;
+    width:100%;
+}
+
+.container1 {
+    width:100%;
+}
+
+.fieldContainer {
+    width:100%;
+}
+
+.fieldTitle {
+    color:var(--black);
+    margin-bottom:0;
+}
+
+input[type=text], select {
+    padding:15px 18px;
+    border:1px solid var(--lightGray);
+    box-sizing:border-box;
+    width:100%;
+    border-radius:10px;
+}
+
+.street {
+    margin-bottom:10px;
+}
+
+label {
+    color:var(--black);
+}
+
+.fieldContainer.phone {
+    margin-bottom:50px;
+}
+
+.order {
+    color:var(--black);
+}
+
+textarea {
+    width:100%;
+    padding:20px 40px 50px 10px;
+    box-sizing:border-box;
+    border-radius:10px;
+}
+
+.maincouponContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.coupon {
+    color:var(--black);
+    font-size: 30px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.couponDescrption {
+    color:var(--darkGray);
+}
+
+.couponKontainer {
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.couponContainer {
+    display:flex;
+    width:100%;
+    gap:10px;
+}
+
+.inputCoupon {
+    padding:15px;
+    border-radius:8px;
+}
+
+.inputContainer {
+    width:40%;
+    display:flex;
+    align-items: center;
+}
+
+.containerKoupon {
+    border:1px solid var(--lightGray);
+    background-color:var(--white);
+    padding:10px;
+}
+
+table {
+    width:100%;
+    color:var(--black);
+    margin-bottom:50px;
+    border-collapse: collapse;
+}
+
+th {
+    text-align:left;
+    border-bottom:2px solid var(--black);
+    padding-bottom:8px;
+}
+
+td {
+    border-bottom:1px solid var(--lightGray);
+    padding:10px 0;
+}
+
+.tableContainer {
+    border:1px solid var(--lightGray);
+    background-color: var(--white);
+    padding:20px 15px;
+}
+
+.paymentContainer {
+    border:1px solid var(--lightGray);
+    margin-bottom:10px;
+    padding:10px 20px;
+
+}
+
+.payment {
+    color:var(--black);
+    text-decoration:underline;
+}
+
+
+.btnContainer {
+    margin-top:50px;
+}
+
+
+@media (min-width:768px) {
+    .formContainer {
+        flex-direction: row;
+        gap:15px;
+    }
+
+    .container , .container1{
+        width:49%;
+    }
+
+    .container1 {
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+
+    .formTitle {
+        margin-bottom:15px;
+    }
+
+    .namesContainer {
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
+
+    .namesContainer.final {
+        margin-bottom:20px;
+    }
+
+    .fieldContainer.phone {
+        margin-bottom:0;
+    }
+
+    .inputCoupon {
+        width:100%;
+    }
+}

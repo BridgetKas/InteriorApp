@@ -8,6 +8,7 @@ import Blog  from './pages/Blog/BlogPage'
 import Contact  from './pages/Contact/ContactPage'
 import Cart  from './pages/Cart/CartPage'
 import { colors } from "./utils/colors"
+import Checkout from "./pages/Checkout/CheckoutPage"
 
 
 const router = createBrowserRouter([
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
         path:"cart",
         element:<Cart/>
       },
+      {
+        path:"checkout",
+        element:<Checkout/>
+
+      }
       
     ],
   },

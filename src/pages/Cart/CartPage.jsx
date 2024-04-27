@@ -6,6 +6,7 @@ import nordicChair from "../../assets/home/nordic.png"
 import { RxCross2 } from "react-icons/rx";
 import {colors} from "../../utils/colors"
 import Button from '../../components/common/Button/Button'
+import { NavLink } from 'react-router-dom'
 
 
 const itemsArr = [
@@ -34,23 +35,46 @@ function Cart() {
   const handleChair = (chair) => setItems([...items,chair]);
 
   const handleQuantityIncrease = (id) => {
-    let incrementIndex = items.findIndex ((item) => item.id === id)
+    const incrementIndex = items.findIndex ((item) => item.id === id)
     let updatedItems = [...items]
-    updatedItems[incrementIndex].quantity ++
+    updatedItems[incrementIndex].quantity++
+    let updatedQuantity = updatedItems[incrementIndex].quantity
+    updatedItems[incrementIndex].total = updatedQuantity * updatedItems[incrementIndex].price
     setItems(updatedItems)
   };
 
-  // const handleQuantityDecrease = (n) => setQuantity(n => n-1);
+  const handleQuantityDecrease = (id) => {
+    const  decrementIndex = items.findIndex ((item) => item.id === id)
+    let decrementArr = [...items]
+    if (decrementArr[decrementIndex]. quantity <= 1){
+      return
+    }
+   let decrementQuantity = -- decrementArr[decrementIndex].quantity;
+   decrementArr[decrementIndex].total = decrementQuantity * decrementArr[decrementIndex].price;
+   setItems(decrementArr)
+  };
 
-  const itemTotal = (item) => item.quantity * item.price;
+  const changeQuantity = (id,e) =>{
+    const changeIndex = items.findIndex((item) => item.id === id)
+    let changeValue = Number(e.target.value)
+    if (changeValue <= 0) {
+        return;
+    }
+    let changedItems = [...items]
+    changedItems[changeIndex].quantity = changeValue
+    changedItems[changeIndex].total = changedItems[changeIndex].quantity * changedItems[changeIndex].price
+    setItems(changedItems)
+  }
 
   const cartTotal = () => {
     let total = 0;
     items.forEach((item) => {
-      total += itemTotal(item)
+      total += item.total
     });
     return total;
   }
+
+  
 
 
   return (
@@ -79,10 +103,10 @@ function Cart() {
                   <p className={styles.itemPrice}>${item.price}</p>
                   <div className={styles.mainbtnContainer}>
                     <div className={styles.btnContainer}>
-                      <button>-</button>
+                      <button onClick = {() => handleQuantityDecrease(item.id)}>-</button>
                     </div>
                     <div className={styles.inputContainer}>
-                      <input type="number" className={styles.input} value={item.quantity}/>
+                      <input type="number" className={styles.input} value={item.quantity} onChange={(e) => changeQuantity(item.id,e)}/>
                     </div>
                     <div className={styles.btnContainer}>
                       <button onClick={() => handleQuantityIncrease(item.id)}>+</button>
@@ -125,15 +149,15 @@ function Cart() {
             <h2>Cart Totals</h2>
             <hr/>
             <div className={styles.totalContainer}>
-            <p className={styles.priceName}>Subtotal</p>
-            <p className={styles.price}>$458</p>
+              <div className={styles.priceName}>Subtotal</div>
+              <div className={styles.price}>${cartTotal()}</div>
             </div>
             <div className={styles.totalContainer}>
-            <p className={styles.priceName}>Total</p>
-            <p className={styles.price}>$458</p>
+              <div className={styles.priceName}>Total</div>
+              <div className={styles.price}>${cartTotal()}</div>
             </div>
             <div className={styles.checkoutContainer}>
-              <Button title="Proceed To Checkout"/>
+              <NavLink to= "/checkout"><Button title="Proceed To Checkout"/></NavLink>
             </div>
           </div>
         </div>
