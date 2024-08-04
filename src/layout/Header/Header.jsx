@@ -1,10 +1,16 @@
-import React from 'react'
 import "./Header.module.css"
 import styles from "./Header.module.css"
 import {colors} from "../../utils/colors"
 import Button from '../../components/common/Button/Button'
 
-function Header({title,titleDescription,imageSrc,showBtn=true,showImage=true,showDescription=true}) {
+function Header({
+  title,
+  titleDescription,
+  imageSrc,
+  showBtn=true,
+  showImage=true,
+  showDescription=true
+}) {
 
     return (
         <div className={styles.heroContainer} style={{paddingBottom: !showImage ? "100px":0}}>

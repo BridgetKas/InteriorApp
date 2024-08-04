@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiOutlineMail } from "react-icons/hi";
 import styles from "./FormComp.module.css"
 import { LuSend } from "react-icons/lu";

@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../../layout/Header/Header'
 import Nordic from "../../assets/home/nordic.png"
 import AeroChair from "../../assets/home/AeroChair.png"
@@ -69,12 +68,15 @@ const chairs = [
   }
 ]
 
+
 function Shop() {
   return (
     <div>
       <Header title="Shop" showBtn={false} showImage={false} showDescription={false}/>
       <div className={styles.shopContainer}>
-        {chairs.map((chair,index)=> <ProductCard key={index} imgSrc={chair.imgSrc1} name={chair.name} price={chair.price} altInfo={chair.altInfo}/>)}
+        {chairs.map((chair,index)=>
+          <ProductCard key={index} imgSrc={chair.imgSrc1} name={chair.name} price={chair.price} altInfo={chair.altInfo}/>
+        )}
       </div>
     </div>
   )

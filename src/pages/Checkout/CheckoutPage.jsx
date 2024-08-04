@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./checkout.module.css"
 import Header from '../../layout/Header/Header'
 import Form from "../../components/common/Form/FormComp"

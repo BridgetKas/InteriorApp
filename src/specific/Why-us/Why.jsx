@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./Why.module.css"
 import { FiShoppingCart, FiTruck } from "react-icons/fi";
 import { HiOutlineSupport } from "react-icons/hi";
@@ -59,22 +58,17 @@ const features = [
 
 function Icon() {
   return (
-    <div>
-        <div   className={styles.featureContainer}>
-
-            {features.map((feature) => {
-                return <div key ={feature.id}>
-                            <div className={styles.iconContainer}>
-                                {feature.icon}
-                            </div>
-                            <p className={styles.featureTitle}>{feature.featureTitle}</p>
-                            <p className={styles.featureDescription}>{feature.featureDescription}</p>
-                        </div>
-                    
-            })}
-        </div> 
-    </div>
-       
+    <div   className={styles.featureContainer}>
+        {features.map((feature) => {
+            return <div key ={feature.id}>
+                <div className={styles.iconContainer}>
+                    {feature.icon}
+                </div>
+                <p className={styles.featureTitle}>{feature.featureTitle}</p>
+                <p className={styles.featureDescription}>{feature.featureDescription}</p>
+            </div>
+        })}
+    </div> 
   )
 }
 

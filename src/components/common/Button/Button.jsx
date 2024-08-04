@@ -1,4 +1,3 @@
-import React from 'react'
 import { colors } from '../../../utils/colors'
 import styles from "./Button.module.css"
 
@@ -10,7 +9,9 @@ function Button(props) {
       color:textColor ? textColor:colors.white,
       backgroundColor: bgColor ? bgColor:colors.black,
       borderColor:borderColor ? borderColor: colors.black,
-     }}>{title}</button>
+     }}>
+      {title}
+    </button>
   )
 }
 

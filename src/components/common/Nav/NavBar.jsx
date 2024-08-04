@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react'
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import styles from "./NavBar.module.css"

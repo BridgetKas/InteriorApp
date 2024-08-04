@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router-dom'
 import { MdPersonOutline } from "react-icons/md";
@@ -8,6 +8,7 @@ import { colors } from '../../../utils/colors';
 
 export default function MobileNav({menu}) {
   const [isOpen,setisOpen] = useState(false)
+
    const menuClicked = () => {
     setisOpen(!isOpen)
    }
@@ -17,7 +18,9 @@ export default function MobileNav({menu}) {
         <GiHamburgerMenu size={30} color={colors.whiteGradient} onClick={menuClicked}/> 
         <div className={`${styles.mobileDropdown} ${isOpen ? styles.open : ''}`}>
           <div className={styles.menuNav}>
-            {menu.map(item => <NavLink to={item.path} key={item.path} className={styles.menuItem}>{item.label}</NavLink>)}
+            {menu.map(item => 
+              <NavLink to={item.path} key={item.path} className={styles.menuItem}>{item.label}</NavLink>
+            )}
           </div>
           <div className={styles.mobileCartContainer}>
             <MdPersonOutline size={30} color={colors.whiteGradient}/>

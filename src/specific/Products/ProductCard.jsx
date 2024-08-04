@@ -1,4 +1,3 @@
-import React from 'react'
 import "./ProductCard.module.css"
 import styles from "./ProductCard.module.css"
 

@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 import styles from "./home.module.css"
 import { FiShoppingCart, FiTruck } from "react-icons/fi";
-import { FiShoppingBag } from "react-icons/fi";
 import { HiOutlineSupport } from "react-icons/hi";
 import { TbTruckReturn } from "react-icons/tb";
 import greenCouch from "../../assets/home/couch.png"
@@ -38,36 +37,36 @@ function Home() {
       <div className={styles.mainchairContainer}>
         <div className={styles.productContainer}>
           <h2 className={styles.chairTitle}>
-          Crafted with excellent material.
+            Crafted with excellent material.
           </h2>
           <p className={styles.chairDescription}>
-          Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+            Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
           </p>
           <div >
             <Button title="Explore" textColor={colors.white}/>
           </div>
         </div>
         <div className={styles.chairsContainer}>
-            <ProductCard 
-              imgSrc={Nordic} 
-              name="Nordic Chair" 
-              price="$50" 
-              altInfo="A three legged chair"
-            />
+          <ProductCard 
+            imgSrc={Nordic} 
+            name="Nordic Chair" 
+            price="$50" 
+            altInfo="A three legged chair"
+          />
 
-            <ProductCard 
-              imgSrc={AeroChair} 
-              name="Aero Chair" 
-              price="$78" 
-              altInfo="A cream four-legged chair"
-            />
+          <ProductCard 
+            imgSrc={AeroChair} 
+            name="Aero Chair" 
+            price="$78" 
+            altInfo="A cream four-legged chair"
+          />
 
-            <ProductCard 
-              imgSrc={greenChair} 
-              name="Ernogomic Chair" 
-              price="$48" 
-              altInfo="A green four-legged chair"
-            />
+          <ProductCard 
+            imgSrc={greenChair} 
+            name="Ernogomic Chair" 
+            price="$48" 
+            altInfo="A green four-legged chair"
+          />
         </div>
       </div>
 
@@ -112,17 +111,17 @@ function Home() {
         </div>
       </div>
       <div className={styles.reasonPromContainer}>
-          <div className={styles.reasonsKontainer}>
-            <div className={styles.div1}>
-              <img src={gridImg} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
-            </div>
-            <div className={styles.div2}>
-              <img src={gridImg2} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
-            </div>
-            <div className={styles.div3}>
-              <img src={gridImg3} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
-            </div>
+        <div className={styles.reasonsKontainer}>
+          <div className={styles.div1}>
+            <img src={gridImg} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
           </div>
+          <div className={styles.div2}>
+            <img src={gridImg2} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
+          </div>
+          <div className={styles.div3}>
+            <img src={gridImg3} alt="A grid of three images: a stool,couch and a lampshed" className={`${styles.imageR} `}/>
+          </div>
+        </div>
 
         <div className={styles.promiseContainer}>
           <h2 className={styles.promiseTitle}>We Help You Make Modern Interior Design</h2>
@@ -172,23 +171,9 @@ function Home() {
       </div>
 
       {/* TESTIMONAL SECTION */}
-      {/* <div className={styles.testimonalContainer}>
-        <p className={styles.testimonals}>Testimonials</p>
-        <p className={styles.testimonal}>
-        “Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”
-        </p>
-        <div className={styles.testimonalImageContainer}>
-          <img src={person} alt="An image of the CEO" className={styles.testimonalImage}/>
-        </div>
-        <div className={styles.jobContainer}>
-          <p className={styles.testimonalName}>Maria Jones</p>
-          <p className={styles.testimonalPosition}>CEO, Co-Founder, XYZ Inc.</p>
-        </div>
-      </div> */}
       <div>
         <Testimonal name="Maria Jones" position="CEO, Co-Founder, XYZ Inc." imgSrc={person}testimonalDescr="“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”"/>
       </div>
-
 
       {/* BLOG SECTION */}
       <div className={styles.blogContainer}>
@@ -206,7 +191,6 @@ function Home() {
        <Form/>
       </div>
     </Fragment>
-    
   )
 }
 
